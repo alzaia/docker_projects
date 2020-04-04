@@ -1,0 +1,30 @@
+
+# Basic docker commands to create a simple image for a basic python application.
+
+# First: prepare the app (basic python script here) and the Dockerfile.
+
+
+# Put every part of the project in a folder and build the image
+docker build -t add_2_test .
+
+# Test the build by creating a container instance from the image
+docker run add_2_test
+
+# Important to tag with DockerHub username/project_name before pushing
+docker tag 5777604455e7 zaimialdo/add_2_test
+
+# Push to DockerHub to make the image available
+docker push zaimialdo/add_2_test
+
+
+
+
+
+
+
+
+
+
+
+
+
